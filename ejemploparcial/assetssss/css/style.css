@@ -1,0 +1,43 @@
+:root {
+    font-size: 20px;/*tamaño de vista de la pagina web*/
+}
+
+body {
+    margin: 0;/*margen de la pagina*/
+}
+
+section {
+    height: 100vh;/*tamaño del margen de la pagina*/
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid black;/*grosor de bor de la pagina web*/
+}
+
+#ch p{
+    width: 50ch;/*borde derecho del cuadro*/
+    margin: 1rem;/*espacio entre cuadros arriba y abajo*/
+    border: 1px solid black;/*grosor y color de margen de recuadro*/
+}
+
+#ch p:nth-child(3) {
+    font-family: monospace;/*tipo de letra*/
+}
+/*largo ancho de cuadrados y bordes*/
+#em-rem {
+    font-size: 10px;
+}
+
+#em-rem>div {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+#em {
+    width: 1em;
+    height: 1em;
+}
+
+#rem {
+    width: 1rem;
+    height: 1rem;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Interacciones </title>
+</head>
+<body>
+    <ol><center>
+        <!-- Recarga la misma Pagina Web a la nueva -->
+        <a href="../ejemploparcial/index.html">Enlace 01 Pagina principal</a>
+        <!-- Abre la pagina web en otra pagina-->
+        <a href="../ejemploparcial/imagenesEnlaces.html"target="_blank">Enlace 02 Pagina de imagenes y enlaces</a>
+        <!-- conduce ha una apartado de las imagenes por medio de una etiqueta-->
+        <a href="#sec06">Enlace 03 Enlace ha Imagenes</a>
+        <!-- Abre la pagina web en otra pagina-->
+        <a href="../ejemploparcial/interacciones.html"target="_blank">Enlace 04 Interacciones</a>
+        <!-- Abre la pagina web en otra pagina-->
+        <a href="../ejemploparcial/Contactenos.html"target="_blank">Enlace 05 Contactenos</a>
+        <!-- Recarga la misma Pagina Web a la nueva -->
+        <a href="../ejemploparcial/style.html">Enlace 06 primer parte de estilos</a>
+        <!-- Recarga la misma Pagina Web a la nueva -->
+        <a href="../ejemploparcial/Especificidad.html">Enlace 07 cuadros de colores</a>
+        <!-- Recarga la misma Pagina Web a la nueva -->
+        <a href="../ejemploparcial/unidades.html">Enlace 08 unidades</a>
+    </center></ol>
+    <!-- mostrar linea hr-->
+    <hr>
+
+    <!-- crear boton y que muestre un mensaje-->
+    <button onclick="alert('Hola');">
+        Click   
+    </button>
+    <!-- click sobre texto y que muestre un mensaje-->
+    <p onclick="alert('Hola desde P');">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi autem qui dolor quibusdam, eveniet neque? Natus libero rerum dolorem magni accusamus aliquid beatae, mollitia deserunt, est voluptatem minus at?
+    </p>
+    <!-- mostrar linea hr-->
+    <hr>
+
+    <form action="">
+        <input id="input" type="text"><!-- ingresar usuario tipo texto-->
+        <input type="password"><!-- ingresar contraseña-->
+        <input type="date"><!-- ingresar fecha-->
+        <input type="color"><!-- ingresar color-->
+        <input type="file"><!-- subir un archivo-->
+        <!--crear botones para si y no de seleccion -->
+        <input type="radio" value="yes"> Si
+        <input type="radio" value="nop"> No 
+        <!--crear un barra de dezpliegue para selccionar una opcion-->
+        <select>
+            <option value="opt-01"> Valor 01 </option>
+            <option value="opt-02"> Valor 02 </option>
+            <option value="opt-03"> Valor 03 </option>
+        </select>
+    </form>
+    <!-- mostrar linea hr-->
+    <hr>
+    <!-- envio de datos de login y contraseña aun lugar especifico-->
+    <form action="index.html" method="post">
+        <input type="text" name="username"><!--Ingreso de usuario tipo texto-->
+        <input type="password" name="password"><!--Ingreso de contraseña tipo password-->
+
+        <input type="submit" value="Enviar"><!--botones para envio de datos-->
+        <input type="reset" value="reset"><!--botones para reset de formulario-->
+    </form>
+    <!-- mostrar linea hr-->
+    <hr>
+    
+    <form action="index.html">
+        <fieldset>
+            <legend> Login </legend><!-- mostrar texto en un margen -->
+            <label>
+                Username
+                <input placeholder="e.g. Douglas" type="text" name="username"><!-- mostrar texto paro poder modificarlo-->
+            </label>
+            <label for="password-field">Password</label>
+            <input id="password-field" placeholder="e.g. 12345678Aa!" type="password" name="password"><!-- mostrar texto paro poder modificarlo-->
+        </fieldset>
+        
+        <fieldset>
+            <legend> General </legend><!-- mostrar texto en un margen -->
+            <label>
+                Nombre
+                <input type="text" name="name"><!-- mostrar cuadro para escribir-->
+            </label>
+            <label>
+                Edad
+                <input type="number" name="age"><!-- mostrar cuadro y flechas para modificar la edad-->
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Fin de formulario </legend><!-- mostrar texto en un margen -->
+            <!-- Botones para enviar y reset formulario hacia la pagina principal -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Establecer la paleta de colores */
+:root {
+    --color-primario: #3498db; /* Color principal */
+    --color-secundario: #e74c3c; /* Color secundario */
+    --color-fondo: #f2f2f2; /* Color de fondo */
+    --color-texto: #333; /* Color de texto principal */
+  }
+  
+  /* Estilos generales */
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Estilos de la navegación */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Estilos de las secciones */
+  section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

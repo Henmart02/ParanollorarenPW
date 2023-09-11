@@ -1,0 +1,65 @@
+/*estilo de letra,tamaño de la letra y color de fondo*/
+.fancy-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    background-color:  #FF5733 ;
+}
+/*Borde del parrafo,texto centrado y color del margen del cuadro*/
+#unique {
+    font-family: monospace;
+    text-align: center;
+
+    border: 1px solid rgb(0, 0, 0);
+}
+/*Tamaño de los espacio a escribir*/
+input {
+    font-size: 20px;
+}
+/*espacio de contraseña que sea color negro y que la contraseña sea de color blanco*/
+[type="password"] {
+    background-color: black;
+    color: aliceblue;
+    padding: 2px 10px;
+}
+/*color para cuando el cursor este sobre la letra cambie*/
+.fancy-text:hover {
+    color:   #0c05e6 ;
+}
+/*agregar flechas en la izquierda y derecha del boton a lo largo y con tamaño de 8px*/
+button::before {
+    content: "->";
+    font-size: large;
+    margin-right: 8px;
+}
+
+button::after {
+    content: "<-";
+    font-size: large;
+    margin-right: 8px;
+}
+
+
+/*color del subtitulo general y subtitulo*/
+h3 {
+    color: crimson;
+}
+
+h3.inside{
+    font-family: monospace;/*tipo de letra*/
+}
+/*tipo de letra para p*/
+article p{
+    text-align: justify;
+}
+/*color y tamaño del borde cuadrosSS*/
+article>p {
+    border: 1px solid black;
+}
+/*es un p que va justo después del h3 y lleva una linea sobre el texto*/
+h3+p {
+    text-decoration: line-through;
+}
+/*es un p que va después del h3 pero no necesariamente justo después*/
+h3~p {
+    font-family: sans-serif;
+}
